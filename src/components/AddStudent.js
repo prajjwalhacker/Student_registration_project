@@ -21,7 +21,7 @@ const AddStudent = () => {
     
     let response = await axios.post(url, student);
     const history = useHistory();
-    history.push('/all');
+    history.push('/');
 
   }
 
