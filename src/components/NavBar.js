@@ -19,6 +19,7 @@ const NavBar = () => {
                 <Typography components = "h2" className = {classes.tabs}>Student Registration Platform</Typography>
                 <NavLink to = "/add" exact className = {classes.tabs}>Add Student</NavLink>
                 <NavLink to = "/" exact className = {classes.tabs}>All Students</NavLink>
+                <NavLink to = "/sorted" exact className = {classes.tabs}>Students in Sorted Order</NavLink>
              </Toolbar>
          </AppBar>
      )

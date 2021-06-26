@@ -36,7 +36,7 @@ const EditStudent = (props) => {
     let url = `https://studentruby.herokuapp.com/api/v1/students/${props.match.params.id}`;
     
     let response  = await axios.put(url, student);
-    props.history.push("/all");
+    props.history.push("/");
   }
 
 
