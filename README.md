@@ -4,8 +4,12 @@ The Project is deployed on Heroku and link is -> https://cogoportassignment.hero
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-To Start the project.
-### `npm start`
+To Run the Project no your local, follow the steps
+
+1. Clone the Project.
+2. Then on terminal, do `npm install`
+3. To Start the project, do `npm start`
+
 
 
 ## Available Scripts
