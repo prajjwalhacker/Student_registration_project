@@ -1,24 +1,17 @@
-import logo from './logo.svg';
 import './App.css';
-
+import NavBar from './components/NavBar';
+import AddStudent from './components/AddStudent';
+import AllStudents from './components/AllStudent';
+import {BrowserRouter, Route} from "react-router-dom";
+import EditStudent from './components/EditStudent';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+       <NavBar/>
+       <Route exact strict path = "/" component = {AllStudents}/>
+       <Route exact strict path = "/edit/:id" component = {EditStudent}/>
+       <Route exact strict path = "/add" component = {AddStudent}/>
+    </BrowserRouter>
   );
 }
 
