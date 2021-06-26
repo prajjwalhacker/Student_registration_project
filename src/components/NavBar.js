@@ -20,6 +20,7 @@ const NavBar = () => {
                 <NavLink to = "/add" exact className = {classes.tabs}>Add Student</NavLink>
                 <NavLink to = "/" exact className = {classes.tabs}>All Students</NavLink>
                 <NavLink to = "/sorted" exact className = {classes.tabs}>Students in Sorted Order</NavLink>
+                <NavLink to = "/findbyid" exact className = {classes.tabs}>Student By ID</NavLink>
              </Toolbar>
          </AppBar>
      )

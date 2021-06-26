@@ -5,6 +5,8 @@ import AllStudents from './components/AllStudent';
 import {BrowserRouter, Route} from "react-router-dom";
 import EditStudent from './components/EditStudent';
 import Sorted from './components/Sorted';
+import Find from './components/FindStudent';
+import Student from './components/Student';
 function App() {
   return (
     <BrowserRouter>
@@ -13,6 +15,8 @@ function App() {
        <Route exact strict path = "/edit/:id" component = {EditStudent}/>
        <Route exact strict path = "/add" component = {AddStudent}/>
        <Route exact strict path = "/sorted" component = {Sorted}/>
+       <Route exact strict path = "/findbyid" component = {Find}/>
+       <Route exact strict path = "/students/:id" component = {Student}/>
     </BrowserRouter>
   );
 }
